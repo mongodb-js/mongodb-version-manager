@@ -1,0 +1,21 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "08:00"
+    timezone: Australia/Sydney
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: semver
+    versions:
+    - 7.3.4
+  - dependency-name: mocha
+    versions:
+    - 8.2.1
+    - 8.3.0
+    - 8.3.1
+  - dependency-name: chalk
+    versions:
+    - 4.1.0
